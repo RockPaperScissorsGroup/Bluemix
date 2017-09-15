@@ -106,15 +106,13 @@ def recognize(image_path_name):
     with open(path, 'rb') as images_file:
         results = visual_recognition.classify(images_file=images_file,
                                               classifier_ids=[
-                                                  'schnickschnackschnuck_699533305'])
+                                                  'SchereSteinPapier_1275869923'])
 
     return results
 
 
 def log(j):
     j['images']
-
-
 
 # play_game(['scissors', 'rock', 'rock', 'rock', 'paper'])
 
@@ -142,16 +140,15 @@ while (True):
 
         results = recognize(image_path_name)
 
-        print(json.dumps(results, indent=2))
+        # print(json.dumps(results, indent=2))
 
         if results['images'][0].get('classifiers'):
             res = results['images'][0]['classifiers'][0]['classes'][0]['class']
+            player_1 = tr[res]
+            play_game([player_1])
         else:
             print('Nix gefunden, kein Spiel möglich')
-            player_2 = tr[res]
-
-            play_game([player_2])
-        # print(res)
+            # print(res)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break

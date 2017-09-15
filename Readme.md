@@ -1,1 +1,4 @@
-# Rock Paper Scissor. Inegration example of IBM's Bluemix Visual Recognition Tool
+# The RockPaperScissorGroup presents: Rock paper scissors
+Integration example of IBM's Bluemix Visual Recognition Tool into
+game rock paper scissor.
+

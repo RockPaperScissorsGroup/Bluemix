@@ -97,8 +97,7 @@ image_path_name = 'images/shot.png'
 
 
 def recognize(image_path_name):
-    visual_recognition = VisualRecognitionV3('2016-05-20', api_key='38101248a17c138c02f3e9c20052f04af5b3a61a')
-    # {38101248a17c138c02f3e9c20052f04af5b3a61a}
+    visual_recognition = VisualRecognitionV3('2016-05-20', api_key='api-key') #replace api-key 
     # print(json.dumps(visual_recognition.classify(images_file='SteinTest.jpg'), indent = 2))
 
 

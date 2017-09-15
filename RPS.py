@@ -29,6 +29,8 @@ def recognize(image_path_name):
 
     return results
 
+def log(j):
+    j['images']
 
 while (True):
     # Capture frame-by-frame
@@ -50,6 +52,10 @@ while (True):
         results = recognize(image_path_name)
 
         print(json.dumps(results, indent=2))
+
+        #res = results['images'][0]['classifiers'][0]['classes'][0]['class']
+
+        #print(res)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break

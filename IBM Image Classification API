@@ -4,4 +4,4 @@ https://console.bluemix.net/docs/services/visual-recognition/getting-started.htm
 https://visual-recognition-demo.mybluemix.net/
 
 Example:
-curl -X POST --form "images_file=@SteinTest.jpg" --form "parameters=@myparams.json" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key={38101248a17c138c02f3e9c20052f04af5b3a61a}&version=2016-05-20"
+curl -X POST --form "images_file=@SteinTest.jpg" --form "parameters=@myparams.json" "https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key={api-key}&version=2016-05-20"
